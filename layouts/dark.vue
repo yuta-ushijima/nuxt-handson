@@ -12,7 +12,7 @@ footer {
   width: 100%;
   text-align: center;
 }
-​ .dark {
+.dark {
   background-color: #000;
   color: #fff;
 }
