@@ -1,17 +1,4 @@
-## assetsとstaticの違い
-
-- assets => nuxt本体から読み込まれる
-- static => webpack経由で読み込まれる
-
-## pages
-
-- ルーティングが勝手に生成される
-- nuxtのメイン機能
-
-## nuxt.config.js
-
-- Nuxt全体を制御するファイル
-- 変更したら再起動させる
+# vue.jsの内容
 
 ### head:について
 - アプリケーションのメタ情報
@@ -71,6 +58,24 @@ HTMLのattributeにバインドさせることで、定義したクラスなど�
 - モーダルとかを使いたいときとか]
 - nameによって名前をつければ、場所を指定できる。
 
+# Nuxt.jsの内容
+
+## assetsとstaticの違い
+
+- assets => nuxt本体から読み込まれる
+- static => webpack経由で読み込まれる
+
+## pages
+
+- ルーティングが勝手に生成される
+- nuxtのメイン機能
+
+## nuxt.config.js
+
+- Nuxt全体を制御するファイル
+- 変更したら再起動させる
+
+
 ## nuxt-link
 - aタグだと、リロードになるが、nuxt-linkはjsでルーティングをするので、リロードされない
 
@@ -84,6 +89,15 @@ HTMLのattributeにバインドさせることで、定義したクラスなど�
 - <nuxt/>タグは必須
 - ヘッダーやフッダーを定義すれば、それがページ全体で反映される
 
-## 参考リンク
+## asyncData
+- Vueにはなく、Nuxt.jsのみに使える。
+- これを使うとコンポーネントのHTML生成前に,asyncDataの中で外部APIを叩いたりでき、非同期処理が可能
 
+## 総括
+- NuxtはVueと違って、pagesファイルを作れば、それがそのままルーティングのパス名になる
+- vue-routerの設定を書かなくていい。
+(裏側でnuxtがよしなにやってくれる)
+
+## 参考リンク
+- [第1回Nuxt.jsハンズオン初心者編](https://takanorip.gitbook.io/nuxt-hands-on/)
 - [ディレクトリ構造](https://ja.nuxtjs.org/guide/directory-structure/)

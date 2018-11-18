@@ -13,7 +13,7 @@ footer {
   text-align: center;
 }
 .dark {
-  background-color: #000;
+  background-color: salmon;
   color: #fff;
 }
 </style>
